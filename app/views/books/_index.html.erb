@@ -21,11 +21,11 @@
         <td><%= book.body %></td>
         <% end %>
 
-      <td id= "favorite_buttons_<%= @book.id %>">
-      <%= render "favorites/favorite", book: @book %>
+      <td id= "favorite_buttons_<%= book.id %>">
+      <%= render "favorites/favorite", book: book %>
       </td>
          <td>
-        コメント数：<%= @book.book_comments.count %>
+        コメント数：<%= book.book_comments.count %>
          </td>
        </tr>
         <% end %>

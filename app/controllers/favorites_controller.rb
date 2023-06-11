@@ -1,9 +1,9 @@
 class FavoritesController < ApplicationController
 
-
+before_action :authenticate_user!
 
   #belongs_to :user
-  #belongs_to :book
+  #sbelongs_to :book
 
   def create
    @book = Book.find(params[:book_id])
